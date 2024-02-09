@@ -172,7 +172,7 @@ body {
 
 .body__download__btn{
   width: 300px;
-  background: #000;
+  background: #0000009a;
   text-align: center;
   padding: 25px 0;
   border: 2px solid white;
@@ -191,7 +191,7 @@ body {
   position: absolute;
   width: 100px;
   height: 900px;
-  background: linear-gradient(to left, transparent, rgba(250, 75, 250, 0.116), transparent);
+  background: linear-gradient(to left, transparent, rgba(250, 75, 250, 0.096), transparent);
   top: -200%;
   animation: 8s girar linear infinite;
 }

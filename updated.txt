@@ -1,3 +1,6 @@
+v1.13
+- Cambo fondo de botones homepage
+
 v1.12
 - Botones para descargar PDFs integrados en el homepage
 
