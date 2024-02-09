@@ -40,8 +40,8 @@ export const Homepage = ({ PlaySound }) => {
         <div className="lettersAnimation">
           <section className="sectionHuman" data-identity="Solid Electrolyte Energy Now">
             <h1>
-              <span style={{ whiteSpace: "nowrap" }}>Solid Electrolyte Energy</span>
-              <span style={{ whiteSpace: "nowrap" }}>Now</span>
+              <span style={{ whiteSpace: "nowrap" }}>SOLID ELECTROLYTE</span>
+              <span style={{ whiteSpace: "nowrap" }}>FOR BATERIES</span>
             </h1>
             <blockquote className="d-flex">
               {/* <div className="d-flex">

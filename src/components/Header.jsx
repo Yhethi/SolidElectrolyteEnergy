@@ -84,7 +84,7 @@ export const Header = ({ audio, section }) => {
           </a>
         </div>
       </div>
-      <div className="logo">
+      {/* <div className="logo">
         <Link to="/">
           <img
             src={logo}
@@ -94,7 +94,7 @@ export const Header = ({ audio, section }) => {
             }}
           />
         </Link>
-      </div>
+      </div> */}
       {/* <nav className="navbar navbar-expand-lg navbar-dark header__menu">
         <button
           className="navbar-toggler"

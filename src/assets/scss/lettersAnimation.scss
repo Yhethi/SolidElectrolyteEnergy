@@ -51,7 +51,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-48%, -56%);
-  font-size: 1.8em;
+  font-size: 2.4em;
   letter-spacing: 0.5em;
   // content: attr(data-identity);
   color: #eaeaf2;
@@ -59,7 +59,7 @@
   animation: animLetterSpacing 15000ms infinite ease-in-out;
 }
 
-@media (max-width: 1480px) {
+@media (max-width: 1350px) {
   .sectionHuman h1 {
     display: flex;
     flex-direction: column;
@@ -70,7 +70,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -56%);
-    font-size: 1.2em;
+    font-size: 1.4em;
     letter-spacing: 0.5em;
     // content: attr(data-identity);
     color: #eaeaf2;
@@ -99,7 +99,7 @@
     }
   }
   .sectionHuman h1 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     display: flex;
     flex-direction: column;
     gap: 30px;
