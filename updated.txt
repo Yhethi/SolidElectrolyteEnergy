@@ -1,3 +1,6 @@
+v1.12
+- Botones para descargar PDFs integrados en el homepage
+
 v1.11
 - Cambio de texto y tamaño de letras animadas de homepage
 

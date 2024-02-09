@@ -6,6 +6,9 @@ import playButton from "../assets/body/playButton.png";
 import "../assets/scss/lettersAnimation.scss";
 import videoHome from "../assets/mp4/homepage/homepage.mp4";
 import { textos } from "./textos/Textos";
+import Pitch_Deck from "../assets/pdf/homepage/Pitch_Deck.pdf";
+import TECH from "../assets/pdf/homepage/TECH.pdf";
+
 
 export const Homepage = ({ PlaySound }) => {
 
@@ -66,6 +69,12 @@ export const Homepage = ({ PlaySound }) => {
         </div>
         {/* <Hero /> */}
       </div>
+      <div className="body__pitchAndTech">
+          <div className="body__pitchAndTechButtons">
+            <a className="body__download__btn logoFont" href={Pitch_Deck} download="Pitch Deck" target="_blank">Pitch_Deck</a>
+            <a className="body__download__btn logoFont" href={TECH} download="TECH" target="_blank">Tech</a>
+          </div>
+        </div>
     </div>
   );
 };
