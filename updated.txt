@@ -1,3 +1,6 @@
+v1.16
+- Menu adaptativo funcional en cualquier dispositivo
+
 v1.15
 - Sistema funcionando con correo electronico
 
