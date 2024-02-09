@@ -71,7 +71,7 @@ export const Homepage = ({ PlaySound }) => {
       </div>
       <div className="body__pitchAndTech">
           <div className="body__pitchAndTechButtons">
-            <a className="body__download__btn logoFont" href={Pitch_Deck} download="Pitch Deck" target="_blank">Pitch_Deck</a>
+            <a className="body__download__btn logoFont" href={Pitch_Deck} download="Pitch Deck" target="_blank">Pitch Deck</a>
             <a className="body__download__btn logoFont" href={TECH} download="TECH" target="_blank">Tech</a>
           </div>
         </div>
