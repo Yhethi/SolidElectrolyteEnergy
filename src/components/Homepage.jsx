@@ -8,7 +8,7 @@ import videoHome from "../assets/mp4/homepage/homepage.mp4";
 import { textos } from "./textos/Textos";
 import Pitch_Deck from "../assets/pdf/homepage/Pitch_Deck.pdf";
 import TECH from "../assets/pdf/homepage/TECH.pdf";
-import { Document, Page } from "react-pdf";
+
 
 export const Homepage = ({ PlaySound }) => {
 
