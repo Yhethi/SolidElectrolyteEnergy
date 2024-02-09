@@ -1,0 +1,144 @@
+.hero__global {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  text-align: center;
+  margin-top: 150px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* background: rgba(0, 0, 0, 0.808); */
+  height: auto;
+}
+
+.hero__img img {
+  text-align: center;
+  width: 186px;
+  height: 143px;
+}
+.hero__center {
+  display: flex;
+  width: 1140px;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+.hero__center p {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.hero__global p,
+.hero__global a {
+  color: #d7dad7;
+  transition-duration: 0.3s;
+}
+.hero__center a:hover {
+  color: blue;
+}
+.hero__title {
+  color: #fff;
+  font-size: 36px;
+  padding: 40px;
+  font-weight: 500;
+  width: 90%;
+  line-height: 80px;
+}
+
+.hero__description {
+  font-size: 28px;
+  color: #d7dad7;
+}
+
+.hero__socials {
+  display: flex;
+  gap: 50px;
+  margin-top: -30px;
+  margin-bottom: 30px;
+}
+
+.hero__socials img {
+  transition-duration: 0.3s;
+  width: 55px;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.233));
+}
+
+.hero__icon1 {
+  animation-delay: 0s;
+  animation: giro 10s linear infinite;
+}
+
+.hero__icon2 {
+  animation: giro 10s linear infinite;
+  animation-delay: 3.3s;
+}
+
+.hero__icon3 {
+  animation: giro 20s linear infinite;
+  animation-delay: 6.6s;
+}
+
+.hero__social:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+
+@keyframes giro {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-4px, -14px);
+  }
+  50% {
+    transform: translate(-8px, 0px);
+  }
+  75% {
+    transform: translate(-4px, 4px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@media (max-width: 732px) {
+  .hero__center {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+}
+
+.hero__title h1 {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing;
+  animation-duration: 1.5s;
+  animation-timing-function: steps(30, end);
+  animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@media (max-width: 840px) {
+  .hero__title h1 {
+    overflow: hidden;
+    white-space: wrap;
+    width: 0;
+    animation: typing;
+    animation-duration: 1.5s;
+    animation-timing-function: steps(30, end);
+    animation-fill-mode: forwards;
+  }
+}

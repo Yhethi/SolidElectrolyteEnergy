@@ -1,0 +1,193 @@
+v1.087
+- Carousel actualizado con flechas y scroll
+- Botones cambiados en eventos
+
+v1.086
+- Nuevas imagenes en carousel
+
+v1.085
+- Nueva pagina Eventos
+
+v1.084
+- Boton Eventos añadido en el header
+
+v1.083
+- Fondo mas claro
+- Letras mas pequeña
+- Botones en Header sin fondo
+
+v1.082
+- Boton de MetaMask en connect
+- Texto Modal sobre la imagen de fondo en El Nexo
+
+v1.081
+- Boton connect añadido al header
+
+v1.08
+- header items actualizados
+
+v1.079
+- Solo se ha dejado la ultima imagen en El Neno
+
+v1.078
+- Texto en el mensaje de la seccion "El Nexo" cambiado en sus estilos
+
+v1.077
+- Pagina negra con letras blancas al inicio de El Nexo
+- Hashtags eliminados al dar click a al boton para abrir un modal
+
+v1.076
+- Texto en homepage
+- Fixed cambio de texto en letras animadas
+- Ajustado a mobile
+
+v1.075
+- Texto en modal actualizados
+- Nueva funcion para que se pueda leer bien "Unete al Nexo"
+
+v1.074
+- Cambiado el texto del modal en universo
+- Palabra "Universo" a "El Nexo" en el header
+
+v1.073
+- logs erros fixes
+
+v1.072
+- Modal universo con texto nuevo
+- Human unleash letters animation homepage updated
+
+v1.071
+- Al iniciar un modal aparece en universo
+- Indice del modal solucionado
+
+v1.07
+- Universo con scroll en Y en las imagenes
+
+v1.069
+- Imagenes optimizadas en universo
+
+v1.068
+- Modulo universo fondo modificado con scroll en X
+
+v1.067
+- Letras animadas en mobile arreladas
+- Parallax homepage
+
+v1.066
+- Video adaptado al screen y menu mobile actualizado
+- Letras animadas adaptadas al mobile
+
+v1.065
+- Letras Animadas del inicio actualizadas con unete al universo
+- Modal solucionado
+
+v1.064
+- Letras Animadas del inicio actualizadas
+
+v1.063
+- Sass añadido
+- Animacion de letras al inicio de la pagina
+
+v1.062
+- Bug router arreglado
+- Bucle musica solucionado
+
+v1.061
+- Boton universo actualizado
+- Nuevo logo añadido
+- Router DOM añadido
+- Nueva pantalla de universo
+- Musica totalmente funcional individualmente
+
+v1.06
+- Boton universo habilitado y con fondo
+
+v1.059
+- Texto about
+- Pequeños cambios en el modal
+- background arreglado
+- Overflow-y del body solucionado
+
+v1.058
+- Texto a cursiva en los modales
+
+v1.057
+- Cambio del texto en modal about
+- Backgroun modal mas oscuro
+
+v1.056
+- Fondo header deshabilitado
+- Compañias deshabilitadas
+
+v1.055
+- Eliminado el titulo sobre las compañias
+
+v1.054
+- Modal acutalizado
+
+v1.053
+- Modal actualizado
+
+v1.052
+- Universo en el header deshabilitado
+- Modal manifiesto actualizado
+- Header mejorado
+
+v1.051
+- Header actualizado
+- Color del icono de sonido cambiado
+- Limpieza de varios archivos que no se usan
+
+v1.05
+- Audio añadido con boton animado
+- texto eliminado
+
+v1.049
+- Modal mobile actualizado
+
+v1.048
+- Shopify logo updated
+
+v1.047
+- Fondo actualizado, fondo hero y header
+
+v1.046
+- Console Fixes
+- Modal Open FIxed
+
+v1.045
+- Fondo al menu en mobile
+- Modal Añadido
+- Header actualizado con nuevos items
+- Textos añadidos
+
+v1.044
+- Cambiada la palabra action por "Manifiesto" en about del header
+
+v1.043
+- Logos de redes sociales eliminados del hero
+
+v1.042
+- Añadido en el apartado de comunidad, Twitter, Telegram, Discord, Youtube
+
+v1.041
+- Cambio de Network a Comunidad en el header
+
+v1.04
+- Cambio meta tags del titulo e icono
+
+v1.03
+- Logo font es general para usarlo en cualquier parte
+- Menu idiomas nuevo
+- Cambiado el logo antiguo por el nuevo en el enlace del Hero
+
+v1.02
+- Banderas eliminadas
+
+v1.01
+- Cambio de logo
+- Banderas e idiomas en comunidad
+- Cambio de learn a about (Header)
+
+v1.00
+Base

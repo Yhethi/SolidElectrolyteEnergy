@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.global {
+  height: auto;
+}
+
+.logoFont {
+  font-family: "Holtwood One SC", serif;
+  font-family: "Kanit", sans-serif;
+}

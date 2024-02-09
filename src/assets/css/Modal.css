@@ -1,0 +1,145 @@
+.modal__global {
+  position: fixed;
+  background: transparent;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  transition-duration: 0.3s;
+  scale: 0;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.modal__card {
+  width: 647px;
+  height: auto;
+  padding: 40px 40px 40px 40px;
+  background: black;
+  border-radius: 25px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  margin-top: 65px;
+  margin-bottom: auto;
+  max-height: 680px;
+  animation: bounce 8s linear infinite;
+}
+
+@media (max-height: 732px) {
+  .modal__card {
+    overflow-y: scroll;
+    height: 90vh;
+    z-index: 23;
+  }
+}
+
+.modal__card::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(
+    rgba(0, 255, 170, 0.568),
+    rgba(128, 0, 128, 0.514)
+  );
+  width: 100px;
+  height: 110vh;
+  top: -150px;
+  left: 46%;
+  animation: rotateBar 40s linear infinite;
+}
+
+.modal__card::after {
+  content: "";
+  position: absolute;
+  background: black;
+  inset: 5px;
+  border-radius: 25px;
+  max-height: 680px;
+}
+
+@keyframes rotateBar {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.modal__card__texto {
+  text-align: justify;
+  position: relative;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+  z-index: 1;
+  font-style: italic;
+}
+
+.close__modal {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  z-index: 1;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  font-size: 28px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.close__modal:hover {
+  scale: 1.1;
+}
+
+@media (max-width: 732px) {
+  .modal__global {
+    z-index: 1;
+  }
+  .modal__card {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    height: 100vh;
+    text-align: center;
+    margin-top: 10px;
+    padding: 40px 0 0 0px;
+    left: 0;
+    top: 0;
+  }
+
+  .modal__card::after {
+    white-space: pre-wrap;
+  }
+
+  .modal__card::after {
+    content: "";
+    position: absolute;
+    height: auto;
+    background: black;
+    inset: 5px;
+    border-radius: 25px;
+    overflow-y: scroll;
+    /* max-height: 680px; */
+  }
+
+  .modal__card__texto {
+    font-size: 0.8rem;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 531px) {
+  .modal__card__texto {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 489px) {
+  .modal__card__texto {
+    font-size: 0.6rem;
+  }
+}
