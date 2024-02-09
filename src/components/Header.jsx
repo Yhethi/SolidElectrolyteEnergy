@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import logo from "../assets/header/logo.png";
 import "../assets/css/Header.css";
 import { FaChevronDown } from "react-icons/fa";
@@ -13,6 +13,7 @@ import {
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { MdOutlineClose } from "react-icons/md";
+import emailjs from "@emailjs/browser";
 
 export const Header = ({ audio, section }) => {
   const [option, setOption] = useState("");
@@ -66,6 +67,42 @@ export const Header = ({ audio, section }) => {
     }, 100);
   };
 
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
+  };
+  const form = useRef();
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    emailjs
+      .sendForm("service_43y9534", "template_w3wwkre", form.current, {
+        publicKey: "eCWIRCxFjtIoxUlIX",
+      })
+      .then(
+        () => {
+          alert("Tu mensaje ha sido enviado correctamente.");
+          setName("");
+          setEmail("");
+          setMessage("");
+          closeModalConnect();
+        },
+        (error) => {
+          alert("Tu mensaje no se ha enviado correctamente.", error.text);
+        }
+      );
+  };
+
   return (
     <div className="header__global">
       {loader && <ModalHome option={option} setLoader={setLoader} />}
@@ -74,14 +111,54 @@ export const Header = ({ audio, section }) => {
           <a className="close__modalConnect" onClick={closeModalConnect}>
             <MdOutlineClose />
           </a>
-          <a
-            className="modalConnect__card__texto logoFont"
-            href="https://metamask.io/download/"
-            target="_blank"
-            // style={{ textDecoration: "none" }}
-          >
-            MetaMask
-          </a>
+          <div className="header__formulario">
+            <h1 className="modalConnect__card__texto logoFont">Formulario</h1>
+            <form ref={form} onSubmit={handleSubmit}>
+              <label className="logoFont" htmlFor="name">
+                Name:
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="user_name"
+                value={name}
+                onChange={(e) => {
+                  setName(e.target.value);
+                }}
+                required
+              />
+
+              <label className="logoFont" htmlFor="email">
+                Email:
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="user_email"
+                value={email}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                }}
+                required
+              />
+
+              <label className="logoFont" htmlFor="message">
+                Message:
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                value={message}
+                onChange={(e) => {
+                  setMessage(e.target.value);
+                }}
+                required
+              />
+              <button className="logoFont" type="submit">
+                Submit
+              </button>
+            </form>
+          </div>
         </div>
       </div>
       {/* <div className="logo">
@@ -95,7 +172,7 @@ export const Header = ({ audio, section }) => {
           />
         </Link>
       </div> */}
-      {/* <nav className="navbar navbar-expand-lg navbar-dark header__menu">
+      <nav className="navbar navbar-expand-lg navbar-dark header__menu">
         <button
           className="navbar-toggler"
           type="button"
@@ -113,102 +190,16 @@ export const Header = ({ audio, section }) => {
               <a
                 className="nav-link logoFont"
                 onClick={() => {
-                  onHandleOption("about");
-                  setLoader(true);
-                }}
-              >
-                About
-              </a>
-            </li>
-            <li
-              className="nav-item universe__button"
-              onClick={() => {
-                audio.pause();
-              }}
-            >
-              <Link className="nav-link logoFont universoButton" to={`/ElNexo`}>
-                El Nexo
-              </Link>
-            </li>
-            <li
-              className="nav-item"
-            >
-              <Link className="nav-link logoFont" to={`#`}>
-                Colección
-              </Link>
-            </li>
-            <li
-              className="nav-item"
-            >
-              <Link className="nav-link logoFont" to={`/Eventos`}>
-                Eventos
-              </Link>
-            </li>
-            <div className="social__icons">
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  <FaTiktok />
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  <FaInstagram />
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  <FaTwitter />
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  <FaDiscord />
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  <FaYoutube />
-                </a>
-              </li>
-            </div>
-            <li className="nav-item dropdown logoFont">
-              <a
-                className="nav-link"
-                href="#"
-                id="navbarDropdownMenuLink"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                <img className="googleTr" src={googleTr} alt={googleTr} />
-                <FaChevronDown className="dropIcon" />
-              </a>
-              <div
-                className="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <a className="dropdown-item language" href="#">
-                  <p>Spanish</p>
-                </a>
-                <a className="dropdown-item language" href="#">
-                  <p>English</p>
-                </a>
-              </div>
-            </li>
-            <li className="nav-item">
-              <a
-                className="nav-link logoFont"
-                onClick={() => {
                   onHandleOptionConnect();
                   setLoader(true);
                 }}
               >
-                Connect
+                Contact
               </a>
             </li>
           </ul>
         </div>
-      </nav> */}
+      </nav>
     </div>
   );
 };

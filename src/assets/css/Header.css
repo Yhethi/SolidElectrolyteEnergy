@@ -3,14 +3,14 @@
 .header__global {
   position: absolute;
   /* background: rgba(0, 0, 0, 0.11); */
-  background: rgba(0, 0, 0, 0.550);
+  background: rgba(0, 0, 0, 0.55);
   width: 100vw;
   height: 88px;
   display: flex;
-  align-items: start;
+  align-items: left;
   padding: 20px;
   z-index: 2;
-  justify-content: start;
+  justify-content: end;
 }
 
 .logo {
@@ -244,10 +244,10 @@
 }
 
 .modalConnect__card__texto {
-  width: 90%;
+  width: 100%;
   padding: 10px;
   background: black;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   text-align: justify;
   position: relative;
   z-index: 1;
@@ -274,6 +274,7 @@
   font-size: 28px;
   cursor: pointer;
   transition-duration: 0.3s;
+  z-index: 2;
 }
 
 .close__modalConnect:hover {
@@ -329,3 +330,39 @@
     font-size: 0.6rem;
   }
 } */
+
+.header__formulario {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  z-index: 1;
+}
+
+.header__formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__formulario form label {
+  font-size: 20px;
+  margin-bottom: -10px;
+}
+
+.header__formulario form button {
+  background: #000000da;
+  text-align: center;
+  padding: 25px 0;
+  border: 2px solid white;
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition-duration: 0.3s;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.header__formulario form button:hover {
+  background: #fff;
+  color: black;
+}
