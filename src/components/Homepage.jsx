@@ -16,7 +16,7 @@ export const Homepage = ({ PlaySound }) => {
     backVideo.style.transform = `translate(${totalX}px,${totalY}px)`;
   };
 
-  window.addEventListener("mousemove", mousemove);
+  // window.addEventListener("mousemove", mousemove);
 
   return (
     <div className="body__global">

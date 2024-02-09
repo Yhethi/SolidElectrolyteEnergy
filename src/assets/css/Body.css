@@ -4,32 +4,35 @@ body {
 }
 
 .body__video {
-  position: fixed;
   width: 100vw;
-  height: 100vh;
+  position: absolute;
   top: 0;
   left: 0;
-  display: flex;
-  align-items: center;
-  z-index: -1;
+  z-index: -3;
+  height: 100vh;
+  overflow: hidden;
 }
 .body__video video {
-  width: 100vw;
+ width: 100%;
+ height: 100%;
+ position: relative;
+ object-fit: cover;
+ scale: 1;
 }
 
 @media (max-width: 1024px) {
-  .body__video video {
+  /* .body__video video {
     width: 100vw;
     transform: translateY(-0px);
-  }
+  } */
 }
 
 @media (max-width: 732px) {
-  .body__video video {
+  /* .body__video video {
     width: 1100px;
     animation: seeAllImage 60s linear infinite;
     object-fit: contain;
-  }
+  } */
 }
 @keyframes seeAllImage {
   0%,
