@@ -1,3 +1,10 @@
+v1.0
+- Letras animadas modificadas con un texto diferente
+- Video de fondo animado
+- Menu deshabilitado
+
+
+/*↑New Project↑*/
 v1.087
 - Carousel actualizado con flechas y scroll
 - Botones cambiados en eventos

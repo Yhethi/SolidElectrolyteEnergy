@@ -3,14 +3,14 @@
 .header__global {
   position: absolute;
   /* background: rgba(0, 0, 0, 0.11); */
-  background: rgba(0, 0, 0, 0.808);
+  background: rgba(0, 0, 0, 0.550);
   width: 100vw;
   height: 88px;
   display: flex;
   align-items: start;
   padding: 20px;
   z-index: 2;
-  justify-content: space-around;
+  justify-content: start;
 }
 
 .logo {

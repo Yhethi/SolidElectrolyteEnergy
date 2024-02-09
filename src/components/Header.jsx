@@ -95,7 +95,7 @@ export const Header = ({ audio, section }) => {
           />
         </Link>
       </div>
-      <nav className="navbar navbar-expand-lg navbar-dark header__menu">
+      {/* <nav className="navbar navbar-expand-lg navbar-dark header__menu">
         <button
           className="navbar-toggler"
           type="button"
@@ -120,17 +120,6 @@ export const Header = ({ audio, section }) => {
                 About
               </a>
             </li>
-            {/* <li className="nav-item">
-              <a
-                className="nav-link logoFont"
-                onClick={() => {
-                  onHandleOption("manifiesto");
-                  setLoader(true);
-                }}
-              >
-                Manifiesto
-              </a>
-            </li> */}
             <li
               className="nav-item universe__button"
               onClick={() => {
@@ -143,9 +132,6 @@ export const Header = ({ audio, section }) => {
             </li>
             <li
               className="nav-item"
-              // onClick={() => {
-              //   audio.pause();
-              // }}
             >
               <Link className="nav-link logoFont" to={`#`}>
                 Colección
@@ -153,9 +139,6 @@ export const Header = ({ audio, section }) => {
             </li>
             <li
               className="nav-item"
-              // onClick={() => {
-              //   audio.pause();
-              // }}
             >
               <Link className="nav-link logoFont" to={`/Eventos`}>
                 Eventos
@@ -225,7 +208,7 @@ export const Header = ({ audio, section }) => {
             </li>
           </ul>
         </div>
-      </nav>
+      </nav> */}
     </div>
   );
 };

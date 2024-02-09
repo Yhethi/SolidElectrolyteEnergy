@@ -4,34 +4,10 @@ import { Hero } from "./Hero";
 import { Notices } from "./Notices";
 import playButton from "../assets/body/playButton.png";
 import "../assets/scss/lettersAnimation.scss";
-import videoHome from "../assets/body/Aetheria1.mp4";
+import videoHome from "../assets/mp4/homepage/homepage.mp4";
 import { textos } from "./textos/Textos";
 
 export const Homepage = ({ PlaySound }) => {
-  function init() {
-    let index = 0;
-    let data = ["Unete al Universo"];
-    let span = document.querySelector("span");
-    let section = document.querySelector("section");
-
-    // let txt = document.createTextNode(data[index]);
-    // section.dataset.identity = data[index];
-    // span.innerText = txt.textContent;
-    // index++;
-
-    // setInterval(function () {
-    //   let txt = document.createTextNode(data[index]);
-    //   section.dataset.identity = data[index];
-    //   span.innerText = txt.textContent;
-    //   index++;
-    //   index = index < data.length ? index++ : 0;
-    // }, 4501);
-  }
-  useEffect(() => {
-    setTimeout(() => {
-      init();
-    }, 500);
-  }, []);
 
   const mousemove = (event) => {
     const backVideo = document.querySelector(".backVideo");
@@ -40,11 +16,11 @@ export const Homepage = ({ PlaySound }) => {
     backVideo.style.transform = `translate(${totalX}px,${totalY}px)`;
   };
 
-  // window.addEventListener("mousemove", mousemove);
+  window.addEventListener("mousemove", mousemove);
 
   return (
     <div className="body__global">
-      {/* <div className="body__video">
+      <div className="body__video">
         <video
           className="backVideo"
           src={videoHome}
@@ -52,26 +28,26 @@ export const Homepage = ({ PlaySound }) => {
           loop
           muted
         ></video>
-      </div> */}
-      <img
+      </div>
+      {/* <img
         className="playButton"
         src={playButton}
         alt={playButton}
         onClick={PlaySound}
-      />
+      /> */}
       {/* <div className="body__wallpaper"></div> */}
       <div className="body__components">
         <div className="lettersAnimation">
-          <section className="sectionHuman" data-identity="UNETE AL EL NEXO">
+          <section className="sectionHuman" data-identity="Solid Electrolyte Energy Now">
             <h1>
-              <span style={{ whiteSpace: "nowrap" }}>UNETE A</span>
-              <span style={{ whiteSpace: "nowrap" }}>EL NEXO</span>
+              <span style={{ whiteSpace: "nowrap" }}>Solid Electrolyte Energy</span>
+              <span style={{ whiteSpace: "nowrap" }}>Now</span>
             </h1>
             <blockquote className="d-flex">
-              <div className="d-flex">
+              {/* <div className="d-flex">
                 HUMAN
                 <p style={{ color: "#FFF", marginLeft: "7px" }}>UNLEASH</p>
-              </div>
+              </div> */}
               <span></span>
             </blockquote>
           </section>

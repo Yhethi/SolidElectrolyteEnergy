@@ -50,14 +50,35 @@
   text-align: center;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -56%);
-  font-size: 2.5em;
+  transform: translate(-48%, -56%);
+  font-size: 1.8em;
   letter-spacing: 0.5em;
   // content: attr(data-identity);
   color: #eaeaf2;
   z-index: -1;
   animation: animLetterSpacing 15000ms infinite ease-in-out;
 }
+
+@media (max-width: 1480px) {
+  .sectionHuman h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: uppercase;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -56%);
+    font-size: 1.2em;
+    letter-spacing: 0.5em;
+    // content: attr(data-identity);
+    color: #eaeaf2;
+    z-index: -1;
+    animation: animLetterSpacing 15000ms infinite ease-in-out;
+  }
+}
+
 
 @media (max-width: 732px) {
   .sectionHuman {
@@ -78,11 +99,11 @@
     }
   }
   .sectionHuman h1 {
-    font-size: 3rem;
+    font-size: 1.2rem;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    transform: translate(-50%, -60%);
+    transform: translate(-47.5%, -60%);
   }
   .lettersAnimation {
     width: 100vw;
