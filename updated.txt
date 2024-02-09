@@ -1,3 +1,6 @@
+v1.14
+- PDF ahora es visible en el navegador cuando se presiona un boton en el homepage
+
 v1.13
 - Cambo fondo de botones homepage
 
