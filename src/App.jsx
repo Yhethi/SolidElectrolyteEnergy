@@ -49,11 +49,11 @@ function App() {
         section="homepage"
       />
       <Homepage PlaySound={PlaySound} />
-      <Footer
+      {/* <Footer
         stopMusic={stopMusic}
         setLoader={setLoader}
         onHandleOptionConnect={onHandleOptionConnect}
-      />
+      /> */}
     </div>
   );
 }
