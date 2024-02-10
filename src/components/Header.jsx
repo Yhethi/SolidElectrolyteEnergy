@@ -15,9 +15,14 @@ import { Link } from "react-router-dom";
 import { MdOutlineClose } from "react-icons/md";
 import emailjs from "@emailjs/browser";
 
-export const Header = ({ audio, section }) => {
+export const Header = ({
+  audio,
+  section,
+  setLoader,
+  loader,
+  onHandleOptionConnect,
+}) => {
   const [option, setOption] = useState("");
-  const [loader, setLoader] = useState(false);
 
   const onHandleOption = (texto) => {
     const navbarCollapse = document.querySelector(".navbar-collapse");
@@ -49,22 +54,6 @@ export const Header = ({ audio, section }) => {
     setTimeout(() => {
       connectModal.style.scale = "0";
     }, 200);
-  };
-
-  const onHandleOptionConnect = () => {
-    const navbarCollapse = document.querySelector(".navbar-collapse");
-    navbarCollapse.classList.remove("show");
-    setTimeout(() => {
-      const modal__global = document.querySelector(".connectModal");
-      if (modal__global !== null) {
-        modal__global.style.scale = "1";
-      }
-      setTimeout(() => {
-        if (modal__global !== null) {
-          modal__global.style.background = "#000000AA";
-        }
-      }, 200);
-    }, 100);
   };
 
   const [formData, setFormData] = useState({
@@ -195,7 +184,7 @@ export const Header = ({ audio, section }) => {
                     setLoader(true);
                   }}
                 >
-                  Contact
+                  emiliano@thesolidbatteries.com
                 </a>
               </li>
             </ul>

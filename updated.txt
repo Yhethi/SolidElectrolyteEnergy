@@ -1,3 +1,7 @@
+v1.21
+- Contact cambio de letras
+- Se agrego etiqueta footer
+
 v1.2
 - Bordes y letras de botones difuminados
 

@@ -9,9 +9,7 @@ import { textos } from "./textos/Textos";
 import Pitch_Deck from "../assets/pdf/homepage/Pitch_Deck.pdf";
 import TECH from "../assets/pdf/homepage/TECH.pdf";
 
-
 export const Homepage = ({ PlaySound }) => {
-
   return (
     <div className="body__global">
       <div className="body__video">

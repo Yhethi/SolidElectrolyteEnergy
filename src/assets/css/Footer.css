@@ -1,0 +1,17 @@
+.footer__tag {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  background: #0000009a;
+}
+
+.footer__tag a {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.footer__tag a:hover{
+    color: white;
+}
