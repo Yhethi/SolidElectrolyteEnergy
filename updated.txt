@@ -1,3 +1,9 @@
+v1.24
+- Nuevo video de fondo extendido
+
+v1.23
+- Video de fondo cambiado
+
 v1.22
 - Footer deshabilitado
 
