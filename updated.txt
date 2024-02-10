@@ -1,3 +1,6 @@
+v1.18
+- Version mobile mejorada y video de fondo optimizado
+
 v1.17
 - Version mobile mejorada
 
