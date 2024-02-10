@@ -4,7 +4,7 @@ import { Hero } from "./Hero";
 import { Notices } from "./Notices";
 import playButton from "../assets/body/playButton.png";
 import "../assets/scss/lettersAnimation.scss";
-import videoHome from "../assets/mp4/homepage/homepage.mp4";
+import videoHome from "../assets/mp4/homepage/homepage.mov";
 import { textos } from "./textos/Textos";
 import Pitch_Deck from "../assets/pdf/homepage/Pitch_Deck.pdf";
 import TECH from "../assets/pdf/homepage/TECH.pdf";

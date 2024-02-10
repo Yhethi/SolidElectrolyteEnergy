@@ -1,3 +1,9 @@
+v1.19
+- Nuevo video de fondo homepage
+- Redireccionamiento a la pagina principal
+- Mejoras añadidas
+- Limpieza de codigo
+
 v1.18
 - Version mobile mejorada y video de fondo optimizado
 
